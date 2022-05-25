@@ -1,6 +1,6 @@
 const fillForm = document.querySelector('#form');
 fillForm.addEventListener('submit', handldeSubmit);
-const buttonMyMail = document.querySelector('#myMail');
+const buttonMyMail = document.querySelector('#mymail');
 
 function toggleMenu (){
     const menuToggle = document.querySelector('.toggle');
