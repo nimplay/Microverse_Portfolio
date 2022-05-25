@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimplay</title>
+    <link rel="shortcut icon" href="./images/nimplayLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="toggle" onclick="toggleMenu();"></div>  
+<!--home setion-->
+ <section class="banner" id="home">    
+     <div class="contentbox">
+      <h5 class="logotext">&nbsp My Portfolio &nbsp</h5>
+      <div>
+          <h4><span>Hello </span>I'm</h4>
+          <h2>Nimrod Acosta</h2>
+          <h4>I'm a Front End Web & App Developer.</h4>
+          <p>Encoding for life. <br> 
+            Web Solutions and Mobile Applications.
+          </p>          
+        </div>
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/NimplayGame"><img src="./images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/nimrodacosta1"><img src="images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/nimplay.site"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/nimrod-acosta-734330169/"><img src="images/LinkedIn.png"></a></li>
+          </ul>
+      </div>     
+ </section>
+ <hr> 
+ <!--Service Section -->
+ <section class="service" id="service">
+    <div class="title">
+        <h2>Services</h2>
+        <p>We offer web programming and mobile applications.</p>
+    </div>
+    <div class="content">
+        <div class="servicesbx">
+           <img src="./images/codeScreen.png">
+           <h2>Web Development</h2>
+           <p>&nbsp End front end development using HTML CSS and Javascript.</p>
+        </div>       
+      
+    </div>
+ </section>
+ <!--About section-->
+ <section class="about" id="about">
+     <div class="title">
+         <h2 id="abouth2">About Me</h2>
+         <p id="aboutp">I am Nimrod Acosta. 
+            I have dedicated my work in web development and mobile applications. 
+            My passion is taking ideas and making them come true. <br><br>
+            A web page is an idea, a showcase that reflects our personality, plans and goals. 
+            That is why I dedicate my effort so that these ideas and these dreams come true. <br><br>
+            I am passionate about music, art and science, that is why I also dedicated years of study 
+            to the development of videogames since in a certain way these unify all those tastes. 
+            I also like to create those experiences in my web design work. Giving the user time to 
+            have a pleasant and interactive experience in my creations</p>
+     </div>
+     <div class="content">
+         <div class="textbx">
+             <p>I specialize in handling technologies for front end wed design, 
+                web development and creation of applications for mobile environments. <br><br> 
+                I also manage the wordpress platform and I have experience creating gamified 
+                environments and composing music and sounds for various applications.
+            </p>
+           <div class="aboutimg">
+               <img src="images/htmlLogo.png" alt="">
+               <img src="images/CSS-Logo.png" alt="">
+               <img src="images/jsLogo.png" alt="">                                 
+           </div>         
+
+         </div>
+         <div class="imgbx">
+             <img src="images/nim.jpeg" alt="">
+
+         </div>
+     </div>
+ </section>
+ <hr id="line">
+ <!--Contact Secction-->
+ <section class="contact" id="contact">
+    <div class="title">
+        <h2 id="contacth2">meet us</h2>
+        <p id="contactp">Let's talk! <br>
+        Our door is always open for a good cup of coffe</p>
+    </div>
+    <form id="form" class="contactform">
+        <div class="row">
+            <div class="col50">
+                <input type="text" name="name" placeholder="Name">
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col50">
+                <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="col50">
+                <input type="text" name="mobile" placeholder="Mobile No.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col100">
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col100">
+                <input class="sub" type="submit" value="Send">
+            </div>            
+        </div>
+    </form>
+    <a href="mailto:nimrod7day@gmail.com" id="mymail">mail</a>
+ </section>
+ <div class="copyright">
+     <p>Copyright © 2022 Nimplay. All Right Reserved </p>
+ </div>
+ </div><div class="sidebar">
+       <ul class="menu">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>          
+          <li><a href="#service" onclick="toggleMenu()">Services</a></li> 
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>         
+          <li><a href="#contact" onclick="toggleMenu()">Meet Us</a></li>
+       </ul>
+ </div>
+ <script src="app.js"></script>
+ </body>
+</html>
