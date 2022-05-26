@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Microverse_Portfolio",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Microverse_Portfolio"
+	}
+}
