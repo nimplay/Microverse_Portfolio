@@ -41,7 +41,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px;
+  padding-right: 13px;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -56,6 +56,8 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
+  background-color: #3c3a39;
+  border: none;
 }
 
 .bar2 .burger .union {
@@ -98,6 +100,11 @@ header {
   left: 0;
   top: 92px;
   background: #1c1a19;
+  background-image: url("./Images/Illustration.png");
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position-x: 100% ;   
+  background-position-y: 80%;
 }
 
 .continer .title {
@@ -167,12 +174,4 @@ header {
   flex: none;
   order: 3;
   flex-grow: 0;
-}
-
-#ilustration {
-  position: absolute;
-  left: 60.74%;
-  right: -30.09%;
-  top: 35%;
-  bottom: -11.63%;
 }
