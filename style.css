@@ -1,28 +1,31 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
+
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
-  scroll-behavior: smooth;    
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Roboto, sans-serif;
 }
 
-header{
+header {
   position: absolute;
   width: 375px;
   height: 92px;
-  left: 0px;
-  top: 0px;
-  background: #3C3A39;
+  left: 0;
+  top: 0;
+  background: #3c3a39;
 }
 
-.bar2{
+.bar2 {
   position: absolute;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   top: 44px;
-  bottom: 0px;
+  bottom: 0;
 }
 
-.bar2 .logo{
+.bar2 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,20 +37,20 @@ header{
   top: calc(50% - 44px/2);
 }
 
-.bar2 .burger{
+.bar2 .burger {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px;  
+  padding: 8px;
   position: absolute;
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px/2);  
+  top: calc(50% - 40px/2);
   border-radius: 8px;
 }
 
-.bar2 .burger .normalb{
+.bar2 .burger .normalb {
   width: 24px;
   height: 24px;
   flex: none;
@@ -55,18 +58,18 @@ header{
   flex-grow: 0;
 }
 
-.bar2 .burger .union{
+.bar2 .burger .union {
   position: absolute;
   width: 18px;
   height: 12px;
   left: 3px;
-  top: 6px;    
+  top: 6px;
 }
 
-#name{
+#name {
   width: 200px;
   height: 24px;
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -74,13 +77,13 @@ header{
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.continer{
+.continer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -92,60 +95,60 @@ header{
   position: absolute;
   width: 375px;
   height: 590px;
-  left: 0px;
+  left: 0;
   top: 92px;
-  background: #1C1A19;
+  background: #1c1a19;
 }
 
-.continer .title{
+.continer .title {
   width: 327px;
-  height: 124px;  
-  font-family: 'Crete Round';
+  height: 124px;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.continer .subtitle{
+.continer .subtitle {
   height: 27px;
-  font-family: 'Roboto';
+  font-family: Roboto, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
-.continer .paragraph{
+.continer .paragraph {
   width: 327px;
   height: 123px;
-  font-family: 'Poppins';
+  font-family: Roboto, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffff;
   flex: none;
   order: 2;
   flex-grow: 0;
 }
 
-.continer .social{
+.continer .social {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
   flex: none;
@@ -153,7 +156,7 @@ header{
   flex-grow: 0;
 }
 
-.social #socialimg{
+.social #socialimg {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -166,10 +169,10 @@ header{
   flex-grow: 0;
 }
 
-#ilustration{
+#ilustration {
   position: absolute;
   left: 60.74%;
   right: -30.09%;
   top: 35%;
-  bottom: -11.63%;  
+  bottom: -11.63%;
 }
