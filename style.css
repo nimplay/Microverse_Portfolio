@@ -34,7 +34,7 @@ header {
   width: 101px;
   height: 44px;
   left: 12px;
-  top: calc(50% - 44px/2);
+  top: calc(50% - 44px / 2);
 }
 
 .bar2 .burger {
@@ -46,7 +46,7 @@ header {
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   border-radius: 8px;
 }
 
@@ -156,7 +156,7 @@ header {
   flex-grow: 0;
 }
 
-.social #socialimg {
+.social .socialimg {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
