@@ -11,7 +11,7 @@
 header {
   position: absolute;
   width: 375px;
-  height: 92px;
+  height: 46px;
   left: 0;
   top: 0;
   background: #3c3a39;
@@ -21,7 +21,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  top: 44px;
+  top: 0;
   bottom: 0;
 }
 
@@ -34,7 +34,7 @@ header {
   width: 101px;
   height: 44px;
   left: 12px;
-  top: calc(50% - 44px / 2);
+  top: calc(50% - 40px / 2);
 }
 
 .bar2 .burger {
@@ -46,7 +46,7 @@ header {
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px / 2);
+  top: calc(50% - 24px / 2);
   border-radius: 8px;
 }
 
@@ -98,13 +98,12 @@ header {
   width: 375px;
   height: 590px;
   left: 0;
-  top: 92px;
+  top: 46px;
   background: #1c1a19;
   background-image: url("./Images/Illustration.png");
-  background-repeat: no-repeat;
-  background-position: absolute;
+  background-repeat: no-repeat;  
   background-position-x: 100%;
-  background-position-y: 125%;
+  background-position-y: 120%;
 }
 
 .continer .title {
