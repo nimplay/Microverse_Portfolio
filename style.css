@@ -174,3 +174,625 @@ header {
   order: 3;
   flex-grow: 0;
 }
+
+/* Section works header */
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 120px 0;
+  gap: 34px;
+  width: 375px;
+  left: 0;
+  top: 636px;
+}
+
+#wheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#wtitle {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #1c1a19;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#line {
+  width: 327px;
+  height: 0;
+  border: 1px solid #212121;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.workintroduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#wintro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 24px;
+  gap: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#image {
+  width: 327px;
+  height: 237px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#wpost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#wh2 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#wpar {
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#wlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.wiconlist {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  background: #ffff;
+  border: 1px solid #8993a4;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.wbutton {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  background: #ff6b00;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  border: none;
+  color: #ffff;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* deck section */
+.deck {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: center;
+}
+
+.card {
+  width: 327px;
+  height: 386px;
+  background-image: url("./Images/Mask.png");
+}
+
+.ctext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 90px 16px;
+  gap: 12px;
+  width: 327px;
+  height: 248px;
+  left: calc(50% - 327px / 2);
+  bottom: 62px;
+}
+
+.ctext h2 {
+  width: 295px;
+  height: 81px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ctext .cp {
+  width: 295px;
+  height: 87px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.clist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 236px;
+  height: 40px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.ciconlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  height: 40px;
+  background: rgb(255 255 255 / 24%);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ciconlist p {
+  height: 20px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.bcnbutton {
+  margin-top: 90px;
+  width: 100%;
+  height: 48px;
+  left: 0;
+  top: 0;
+  background: #ff6b00;
+}
+
+.cbutton {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  background: #ff6b00;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  border: none;
+  color: #ffff;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  position: absolute;
+  left: calc(50% - 119px / 2);
+}
+
+/* about */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 120px 0;
+  gap: 34px;
+  width: 375px;
+  left: 0;
+  top: 3910px;
+  background-color: #1c1a19;
+  background-image: url("./Images/Group.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 21%;
+}
+
+.atext {
+  width: 327px;
+  height: 79px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.aptext {
+  width: 327px;
+  height: 148px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.abutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  align-self: start;
+  margin-left: 24px;
+  margin-bottom: 150px;
+  border: none;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffff;
+}
+
+.aline {
+  order: 3;
+  width: 327px;
+  height: 0;
+  border: 1px solid #ffff;
+  flex: none;
+  flex-grow: 0;
+}
+
+.acontiner {
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px;
+  gap: 24px;
+  width: 329px;
+  height: 1241px;
+  left: calc(50% - 329px / 2);
+  top: 4797px;
+}
+
+.askill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 225px;
+  height: 350px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.arectangle {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  transform: rotate(-45deg);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.arectangle1 {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.arectangle2 {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  border-radius: 150px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.askilltext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+  height: 41px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.askilltitle {
+  height: 24px;
+  font-family: InaiMathi, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.askillist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  width: 186px;
+  height: 216px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.askillitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.askillitemtext {
+  height: 24px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding-top: 120px;
+  padding-bottom: 23px;
+  gap: 34px;
+  width: 375px;
+  left: 0;
+  top: 5810px;
+}
+
+.ctitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 58px;
+  width: 375px;
+  height: 320px;
+  left: 0;
+  top: 6038px;
+}
+
+.ctitletext {
+  width: 327px;
+  height: 216px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 295px;
+  height: 330px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  left: 24px;
+}
+
+.cdata {
+  width: 327px;
+  height: 48px;
+  flex: none;
+  flex-grow: 0;
+  border-top: #dbd8d7;
+  border-left: none;
+  border-right: none;
+}
+
+.cmessage {
+  width: 327px;
+  height: 114px;
+  flex: none;
+  flex-grow: 0;
+  border: none;
+  background-color: #fbf8f7;
+  padding: 15px;
+}
+
+.csubmit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  border: none;
+  flex: none;
+  flex-grow: 0;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffff;
+}
+
+.csocial {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  width: 200px;
+  height: 40px;
+  flex: none;
+  flex-grow: 0;
+}
+
+.csocial .csocialimg {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.fmargin {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  border-radius: 10px;
+  background-image: url("./Images/Shape.png");
+}
