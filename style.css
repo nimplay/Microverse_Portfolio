@@ -408,7 +408,20 @@ header {
   align-items: center;
   padding: 10px 12px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(255 255 255 / 24%);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ciconlist p {
+  height: 20px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -590,7 +603,6 @@ header {
   align-items: center;
   padding: 8px 12px;
   gap: 12px;
-  width: 225px;
   height: 41px;
   flex: none;
   order: 0;
@@ -598,7 +610,6 @@ header {
 }
 
 .askilltitle {
-  width: 164px;
   height: 24px;
   font-family: InaiMathi, serif;
   font-style: normal;
@@ -631,7 +642,6 @@ header {
   flex-direction: row;
   align-items: center;
   padding: 12px 0;
-  width: 114px;
   height: 48px;
   flex: none;
   order: 0;
@@ -639,7 +649,6 @@ header {
 }
 
 .askillitemtext {
-  width: 200px;
   height: 24px;
   font-family: Inter, serif;
   font-style: normal;
