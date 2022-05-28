@@ -313,7 +313,7 @@ header {
   flex-grow: 0;
 }
 
-#wbutton {
+.wbutton {
   display: flex;
   flex-direction: row;
   align-items: center;
