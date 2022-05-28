@@ -327,7 +327,7 @@ header {
   border: none;
 }
 
-#wbutton p {
+#wbutton .wbuttonp {
   font-family: Inter, serif;
   font-style: normal;
   font-weight: 700;
@@ -366,7 +366,7 @@ header {
   gap: 12px;
   width: 327px;
   height: 248px;
-  left: calc(50% - 327px/2);
+  left: calc(50% - 327px / 2);
   bottom: 62px;
 }
 
@@ -437,7 +437,7 @@ header {
   flex-direction: row;
   padding: 12px;
   position: absolute;
-  left: calc(50% - 119px/2);
+  left: calc(50% - 119px / 2);
   background: #ff6b00;
   border: none;
 }
@@ -554,7 +554,7 @@ header {
   gap: 24px;
   width: 329px;
   height: 1241px;
-  left: calc(50% - 329px/2);
+  left: calc(50% - 329px / 2);
   top: 4797px;
 }
 
@@ -798,8 +798,8 @@ header {
   position: absolute;
   width: 134px;
   height: 5px;
-  left: calc(50% - 134px/2 - 0.5px);
-  bottom: 8px;  
-  border-radius: 10px;  
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  border-radius: 10px;
   background-image: url("./Images/Shape.png");
 }
