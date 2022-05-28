@@ -327,7 +327,7 @@ header {
   border: none;
 }
 
-#wbutton .wbuttonp {
+.wbuttonp {
   font-family: Inter, serif;
   font-style: normal;
   font-weight: 700;
