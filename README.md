@@ -35,7 +35,7 @@ Author
 Natasha Tatenda Chirombe
 Github: @NATASHA-ct
 Twitter: @NetashaChirombe
-LinkedIn:linkedin.com/in/natasha-chirombe-1531aa17b
+LinkedIn:  https://www.linkedin.com/in/natasha-chirombe-1531aa17b
 
 Contribution
 ------------
