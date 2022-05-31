@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -692,8 +693,6 @@ header {
 }
 
 .ctitletext {
-  width: 327px;
-  height: 216px;
   font-family: Inter, serif;
   font-style: normal;
   font-weight: 700;
@@ -712,8 +711,6 @@ header {
   align-items: center;
   padding: 0;
   gap: 24px;
-  width: 295px;
-  height: 330px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -760,6 +757,27 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffff;
+}
+
+.csubmit:enabled {
+  background: #ff6b00;
+  color: #ffff;
+}
+
+.csubmit:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border-color: #f55800;
+  border: 1px solid;
+}
+
+.csubmit:active {
+  background: #e05304;
+}
+
+.csubmit:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .csocial {
