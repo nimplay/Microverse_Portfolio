@@ -765,19 +765,19 @@ header {
 }
 
 .csubmit:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #f55800;
   border-color: #f55800;
   border: 1px solid;
 }
 
 .csubmit:active {
-  background: #E05304;
+  background: #e05304;
 }
 
 .csubmit:disabled {
-  background: #F4F1F0;
-  color: #5B5957;
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .csocial {
