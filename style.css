@@ -759,6 +759,27 @@ header {
   color: #ffff;
 }
 
+.csubmit:enabled{
+  background: #ff6b00;
+  color: #ffff;
+}
+
+.csubmit:hover {
+  background-color: #FFF5E1;
+  color: #f55800;
+  border-color: #f55800;
+  border: 1px solid;
+}
+
+.csubmit:active {
+  background: #E05304;
+}
+
+.csubmit:disabled {
+  background: #F4F1F0;
+  color: #5B5957;
+}
+
 .csocial {
   order: 2;
   display: flex;
