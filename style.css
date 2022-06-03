@@ -63,6 +63,21 @@ header {
 #menumail {
   width: 22px;
   height: 18px;
+  transition-property: height width;
+  transition-duration: 0.2s;
+}
+
+.bar2 .burger .headermenu:hover {
+  color: #e05304;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+#menumail:hover {
+  width: 25px;
+  height: 21px;
+  transition-property: height width;
+  transition-duration: 0.2s;
 }
 
 .bar2 .normalb .union {
@@ -138,6 +153,10 @@ header {
   flex-grow: 0;
 }
 
+.containersubtitle {
+    display: flex;
+}
+
 .subtitle {
   height: 27px;
   font-family: Roboto, serif;
@@ -150,6 +169,27 @@ header {
   color: #fff5e1;
   flex: none;
   flex-grow: 0;
+  position: relative;
+  float: left;
+}
+
+.subtitle span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #1c1a19;
+  border-left: 2px solid #dbd8d7;
+  animation: maquine 5s infinite alternate steps(26);
+}
+
+@keyframes maquine {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
 }
 
 .paragraph {
@@ -188,6 +228,24 @@ header {
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+
+.social .socialimg a img {
+  width: 18px;
+  height: 20px;
+  transition-property: height width;
+  transition-duration: 0.1s;
+}
+
+.social .socialimg a img:hover {
+  width: 25px;
+  height: 27px;
+  transition-property: height width;
+  transition-duration: 0.2s;
+  animation-name: buttonanimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* Section works header */
@@ -787,6 +845,24 @@ header {
   flex-grow: 0;
 }
 
+.csocial .csocialimg a img {
+  width: 18px;
+  height: 20px;
+  transition-property: height width;
+  transition-duration: 0.1s;
+}
+
+.csocial .csocialimg a img:hover {
+  width: 25px;
+  height: 27px;
+  transition-property: height width;
+  transition-duration: 0.2s;
+  animation-name: buttonanimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .fmargin {
   order: 5;
   width: 134px;
@@ -795,6 +871,20 @@ header {
   bottom: 8px;
   border-radius: 10px;
   background-image: url("./Images/Shape.png");
+}
+
+@keyframes buttonanimation {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
 }
 
 /* media query section */
@@ -934,7 +1024,7 @@ header {
   }
 
   #wpost {
-    width: 45%;
+    width: 4512%;
     height: 361px;
   }
 
