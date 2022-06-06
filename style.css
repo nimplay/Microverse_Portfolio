@@ -179,7 +179,7 @@ header {
   width: 0;
   background: #1c1a19;
   border-left: 2px solid #dbd8d7;
-  animation: maquine 5s infinite alternate steps(26);
+  animation: maquine 5s infinite alternate steps(30);
 }
 
 @keyframes maquine {
