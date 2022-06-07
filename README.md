@@ -2,7 +2,10 @@ Hello Microverse
 ----------------
  Description
   This is my prototype of mobile version portfolio.   
-  Web site: https://nimplay.github.io/Microverse_Portfolio/
+  
+Live Demo
+---------
+To run this project in your local environment, you can use this [link](https://nimplay.github.io/Microverse_Portfolio/)
   
 Built With
 ----------
@@ -20,7 +23,7 @@ Prerequisites
 
 Install
 -------
- Clone the repo https://github.com/nimplay/Microverse_Portfolio.git
+ Clone the [repo](https://github.com/nimplay/Microverse_Portfolio.git)
 
 Usage
 -----
@@ -31,12 +34,20 @@ Author
  Nimrod Acosta 
  Github:@nimplay 
  Twitter: @NimrodAcosta 
- LinkedIn: https://www.linkedin.com/in/nimrod-acosta-734330169/
+ LinkedIn:[Nimrod Acosta](https://www.linkedin.com/in/nimrod-acosta-734330169/)
+
+Contributers
+------------
+
+Esteban
+GitHub: [@ch4ne5teban](https://www.github.com/ch4ne5teban)
+Twitter: [@ch4ne5teban](https://www.twitter.com/ch4ne5teban)
+
 
 Natasha Tatenda Chirombe
 Github: @NATASHA-ct
 Twitter: @NetashaChirombe
-LinkedIn:  https://www.linkedin.com/in/natasha-chirombe-1531aa17b
+LinkedIn: [Natasha Tatenda](https://www.linkedin.com/in/natasha-chirombe-1531aa17b)
 
 Contribution
 ------------
