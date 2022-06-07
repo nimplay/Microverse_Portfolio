@@ -31,23 +31,22 @@ Usage
 
 Author
 ------
- Nimrod Acosta 
- Github:@nimplay 
- Twitter: @NimrodAcosta 
- LinkedIn:[Nimrod Acosta](https://www.linkedin.com/in/nimrod-acosta-734330169/)
+ ### Nimrod Acosta 
+ - Github: [@nimplay](https://github.com/nimplay) 
+ - Twitter: [@NimrodAcosta](https://twitter.com/NimrodAcosta)
+ - LinkedIn: [Nimrod Acosta](https://www.linkedin.com/in/nimrod-acosta-734330169/)
 
 Contributers
 ------------
 
-Esteban
-GitHub: [@ch4ne5teban](https://www.github.com/ch4ne5teban)
-Twitter: [@ch4ne5teban](https://www.twitter.com/ch4ne5teban)
-
-
-Natasha Tatenda Chirombe
-Github: @NATASHA-ct
-Twitter: @NetashaChirombe
-LinkedIn: [Natasha Tatenda](https://www.linkedin.com/in/natasha-chirombe-1531aa17b)
+### Esteban
+- GitHub: [@ch4ne5teban](https://www.github.com/ch4ne5teban)
+- Twitter: [@ch4ne5teban](https://www.twitter.com/ch4ne5teban)
+-
+-
+### Natasha Tatenda Chirombe 
+- Github: [@NATASHA-ct](https://github.com/NATASHA-ct)
+- LinkedIn: [Natasha Tatenda](https://www.linkedin.com/in/natasha-chirombe-1531aa17b)
 
 Contribution
 ------------
