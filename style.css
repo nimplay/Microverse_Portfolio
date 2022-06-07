@@ -397,6 +397,7 @@ header {
   flex-direction: column;
   width: 375px;
   align-items: center;
+  list-style: none;
 }
 
 .card {
@@ -1050,7 +1051,7 @@ header {
   }
 
   .acontainertext {
-    margin-left: 142px;
+    margin-left: 11%;
     display: flex;
     flex-direction: column;
     width: 45%;
