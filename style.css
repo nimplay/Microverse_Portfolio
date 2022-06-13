@@ -11,12 +11,13 @@
 
 header {
   order: 0;
-  position: absolute;
+  position: fixed;
   width: 375px;
   height: 46px;
   left: 0;
   top: 0;
   background: #3c3a39;
+  z-index: 1;
 }
 
 .bar2 {
@@ -39,45 +40,80 @@ header {
   top: calc(50% - 40px / 2);
 }
 
-.bar2 .normalb {
-  flex-direction: row;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  background-color: #3c3a39;
-  border: none;
-  align-items: flex-start;
-  padding-right: 13px;
-  width: 40px;
-  height: 40px;
-  right: 24px;
-  top: calc(40% - 24px / 2);
-  border-radius: 8px;
-  position: absolute;
+.logo.active {
+  visibility: hidden;
 }
 
 .bar2 .burger {
+  transition: 0.3s;
+  padding-right: 39px;
+  width: 45px;
+  height: 27px;
+  right: 24px;
+  top: calc(40% - 24px / 2);
+  position: absolute;
+  background-image: url(./Images/Union.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bar2 .burger.active {
+  transition: 0.3s;
+  position: absolute;
+  background-image: url(./Images/IconCancel.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar {
+  transition: 0.3s;
+}
+
+.sidebar.active {
+  transition: 0.3s;
+  display: flex;
+  order: 0;
+  position: fixed;
+  top: 0;
+  width: 375px;
+  height: 590px;
+  align-items: start;
+  padding: 40px;
+  background: #3c3a39;
+  align-content: flex-start;
+  justify-content: end;
+  flex-wrap: nowrap;
+}
+
+.menu li {
+  margin-top: 20px;
+}
+
+.menutext {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
+.menuline {
+  width: 300px;
+  height: 0;
+  border: 1px solid #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  right: 10px;
+}
+
+.bar2 .menubar .headermenu {
   display: none;
 }
 
 #menumail {
-  width: 22px;
-  height: 18px;
-  transition-property: height, width;
-  transition-duration: 0.2s;
-}
-
-.bar2 .burger .headermenu:hover {
-  color: #e05304;
-  transition-property: color;
-  transition-duration: 0.2s;
-}
-
-#menumail:hover {
-  width: 25px;
-  height: 21px;
-  transition-property: height, width;
-  transition-duration: 0.2s;
+  display: none;
 }
 
 .bar2 .normalb .union {
@@ -103,6 +139,10 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+#name.active {
+  display: none;
 }
 
 /* main section */
@@ -909,12 +949,26 @@ header {
     gap: 10px;
   }
 
-  .bar2 .normalb {
+  .bar2 .burger {
     display: none;
   }
 
-  .bar2 .burger {
-    margin-right: 6rem;
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.active {
+    display: none;
+  }
+
+  .bar2 .menubar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bar2 .menubar .headermenu {
+    margin-right: 3rem;
     display: flex;
     flex: none;
     order: 0;
@@ -924,21 +978,14 @@ header {
     align-items: center;
     top: 16px;
     justify-content: space-around;
-  }
-
-  .bar2 .burger a {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 10px 12px;
     gap: 10px;
     width: 15%;
     height: 40px;
-    flex: none;
-    flex-grow: 0;
   }
 
-  .bar2 .burger a p {
+  .bar2 .menubar .headermenu p {
     text-decoration: none;
     color: #fff;
     width: 63px;
@@ -951,6 +998,27 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
+  }
+
+  #menumail {
+    display: flex;
+    width: 22px;
+    height: 18px;
+    transition-property: height, width;
+    transition-duration: 0.2s;
+  }
+
+  .bar2 .menubar .headermenu p:hover {
+    color: #e05304;
+    transition-property: color;
+    transition-duration: 0.2s;
+  }
+
+  #menumail:hover {
+    width: 25px;
+    height: 21px;
+    transition-property: height, width;
+    transition-duration: 0.2s;
   }
 
   #name {

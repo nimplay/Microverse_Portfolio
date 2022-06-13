@@ -17,18 +17,17 @@
       <div class="logo">
         <a href="#" id="name">Nimrod Acosta</a>
       </div>
-      <button class="normalb">
-        <img src="./Images/Union.png" class="union" alt="hamburger menu" />
-      </button>
-      <nav class="burger">
-        <a href="#">
-          <p class="headermenu">Portfolio</p>
+      <div class="burger" onclick="toggleMenu();">       
+      </div>
+      <nav class="menubar">
+        <a href="#" class="headermenu">
+          <p >Portfolio</p>
         </a>
-        <a href="#">
-          <p class="headermenu">About</p>
+        <a href="#" class="headermenu">
+          <p >About</p>
         </a>
-        <a href="#">
-          <p class="headermenu">Contact</p>
+        <a href="#" class="headermenu">
+          <p >Contact</p>
         </a>
         <a aria-label="envelop" href="#"><img src="./Images/envelop.png" alt="an envelope" id="menumail" /></a>
       </nav>
@@ -367,6 +366,20 @@
     <div class="fmargin"></div>
     <div></div>
   </section>
+  <div class="sidebar" onclick="toggleMenu();">
+    <ul class="menu">
+       <li>
+         <a class="menutext" href="#" onclick="toggleMenu()">Portfolio </a>
+         <div class="menuline"></div>
+      </li>
+       <li><a class="menutext" href="#" onclick="toggleMenu()">About</a>
+        <div class="menuline"></div>
+      </li>
+       <li><a class="menutext" href="#" onclick="toggleMenu()">Contact</a>
+        <div class="menuline"></div>
+      </li>       
+    </ul>
+</div>
   <script src="app.js"></script>
 
 </body>
