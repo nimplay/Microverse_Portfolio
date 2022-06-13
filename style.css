@@ -141,10 +141,6 @@ header {
   flex-grow: 0;
 }
 
-#name.active {
-  display: none;
-}
-
 /* main section */
 
 .continer {
