@@ -63,7 +63,7 @@ header {
 #menumail {
   width: 22px;
   height: 18px;
-  transition-property: height width;
+  transition-property: height, width;
   transition-duration: 0.2s;
 }
 
@@ -76,7 +76,7 @@ header {
 #menumail:hover {
   width: 25px;
   height: 21px;
-  transition-property: height width;
+  transition-property: height, width;
   transition-duration: 0.2s;
 }
 
@@ -233,14 +233,14 @@ header {
 .social .socialimg a img {
   width: 18px;
   height: 20px;
-  transition-property: height width;
+  transition-property: height, width;
   transition-duration: 0.1s;
 }
 
 .social .socialimg a img:hover {
   width: 25px;
   height: 27px;
-  transition-property: height width;
+  transition-property: height, width;
   transition-duration: 0.2s;
   animation-name: buttonanimation;
   animation-duration: 1s;
@@ -849,14 +849,14 @@ header {
 .csocial .csocialimg .socialbuttonsfooter {
   width: 18px;
   height: 20px;
-  transition-property: height width;
+  transition-property: height, width;
   transition-duration: 0.1s;
 }
 
 .csocial .csocialimg a .socialbuttonsfooter:hover {
   width: 25px;
   height: 27px;
-  transition-property: height width;
+  transition-property: height, width;
   transition-duration: 0.2s;
   animation-name: buttonanimation;
   animation-duration: 1s;
