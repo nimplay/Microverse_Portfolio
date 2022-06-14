@@ -1,4 +1,3 @@
-var toggleMenu
 function toggleMenu() {
   const menuToggle = document.querySelector('.burger');
   const menuActive = document.querySelector('.sidebar');
@@ -7,3 +6,4 @@ function toggleMenu() {
   menuActive.classList.toggle('active');
   logoActive.classList.toggle('active');
 }
+var toggle = toggleMenu;
