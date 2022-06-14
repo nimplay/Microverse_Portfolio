@@ -1,3 +1,4 @@
+var toggleMenu
 function toggleMenu() {
   const menuToggle = document.querySelector('.burger');
   const menuActive = document.querySelector('.sidebar');

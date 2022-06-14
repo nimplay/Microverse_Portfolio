@@ -67,6 +67,7 @@ header {
 
 .sidebar {
   transition: 0.3s;
+  position: fixed;
 }
 
 .sidebar.active {
