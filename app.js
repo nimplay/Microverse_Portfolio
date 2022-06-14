@@ -5,5 +5,4 @@ function toggleMenu() {
   menuToggle.classList.toggle('active');
   menuActive.classList.toggle('active');
   logoActive.classList.toggle('active');
-}
-toggleMenu()
+};
