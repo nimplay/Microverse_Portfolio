@@ -6,8 +6,8 @@ const projectData = [{
   lenguage3: 'Ruby',
   image: './Images/Card1.png',
   imageAlt: 'SnapshootPortfolio',
-  description: "daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard"
-}, 
+  description: "daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+},
 
 {
   title: 'Website Protfolio ',
@@ -16,27 +16,7 @@ const projectData = [{
   lenguage3: 'Ruby',
   image: './Images/SnapshootPortfolio.png',
   imageAlt: 'SnapshootPortfolio',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard" 
-}, 
-
-{
-  title: 'Profesional Art Printing Data More',
-  lenguage1: 'HTML',
-  lenguage2: 'JavaScript',
-  lenguage3: 'CSS',
-  image: './Images/SnapshootPortfolio.png',
-  imageAlt: 'SnapshootPortfolio',
-  description: "daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar"
-}, 
-
-{
-  title: "Data Dashboard Healthcare",
-  lenguage1: 'Ruby',
-  lenguage2: 'bootstrap',
-  lenguage3: 'Ruby on Rails',
-  image: './Images/Mask.png',
-  imageAlt: 'SnapshootPortfolio',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard"
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
 },
 
 {
@@ -46,11 +26,30 @@ const projectData = [{
   lenguage3: 'CSS',
   image: './Images/SnapshootPortfolio.png',
   imageAlt: 'SnapshootPortfolio',
-  description: "daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar"
+  description: "daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar",
+},
+
+{
+  title: "Data Dashboard Healthcare",
+  lenguage1: 'Ruby',
+  lenguage2: 'bootstrap',
+  lenguage3: 'Ruby on Rails',
+  image: './Images/Mask.png',
+  imageAlt: 'SnapshootPortfolio',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+},
+{
+  title: 'Profesional Art Printing Data More',
+  lenguage1: 'HTML',
+  lenguage2: 'JavaScript',
+  lenguage3: 'CSS',
+  image: './Images/SnapshootPortfolio.png',
+  imageAlt: 'SnapshootPortfolio',
+  description: "daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar",
 }];
 
 let index = 0;
-let cards = projectData.length;
+const cards = projectData.length;
 
 /* Functions */
 function toggleMenu() {
@@ -103,13 +102,13 @@ createPopUp.addEventListener('click', () => {
   </div>
 `;
 function cardDefault(projectData, index) {
-document.querySelector('.pop-up-title').textContent = projectData[index].title;
-document.querySelector('#lenguage1').textContent = projectData[index].lenguage1;
-document.querySelector('#lenguage2').textContent = projectData[index].lenguage2;
-document.querySelector('#lenguage3').textContent = projectData[index].lenguage3;
-document.querySelector('.pop-up-image').src = projectData[index].image;
-document.querySelector('.pop-up-image').alt = projectData[index].imageAlt;
-document.querySelector('.pop-up-p').textContent = projectData[index].description;
+  document.querySelector('.pop-up-title').textContent = projectData[index].title;
+  document.querySelector('#lenguage1').textContent = projectData[index].lenguage1;
+  document.querySelector('#lenguage2').textContent = projectData[index].lenguage2;
+  document.querySelector('#lenguage3').textContent = projectData[index].lenguage3;
+  document.querySelector('.pop-up-image').src = projectData[index].image;
+  document.querySelector('.pop-up-image').alt = projectData[index].imageAlt;
+  document.querySelector('.pop-up-p').textContent = projectData[index].description;
 }
 cardDefault(projectData, index);
   const closePop = document.querySelector('.pop-up-x');
@@ -118,12 +117,13 @@ cardDefault(projectData, index);
   });
   const nextPop = document.querySelector('#arrow1');
   nextPop.addEventListener('click', () => {   
-    if(index > 0 && index < cards){
-    index -= 1; 
-    cardDefault(projectData, index);
-    } else{
-    index = cards - 1;     
-    cardDefault(projectData, index);
+    if (index > 0 && index < cards) {
+      index -= 1;
+      cardDefault(projectData, index);
+    } 
+    else{
+      index = cards - 1;     
+      cardDefault(projectData, index);
     } 
   });
   const nextPop2 = document.querySelector('#arrow2');
