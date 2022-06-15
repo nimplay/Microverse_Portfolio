@@ -79,7 +79,7 @@ createPopUp.addEventListener('click', () => {
   document.querySelector('#lenguage3').textContent = projectData[0].lenguage3;
   document.querySelector('.pop-up-image').src = projectData[0].image;
   document.querySelector('.pop-up-image').alt = projectData[0].imageAlt;
-  document.querySelector('.pop-up-p').textContent = projectData[0].description; 
+  document.querySelector('.pop-up-p').textContent = projectData[0].description;
   const closePop = document.querySelector('.pop-up-x');
   closePop.addEventListener('click', () => {
     pop.removeChild(section);
