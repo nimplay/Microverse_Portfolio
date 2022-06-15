@@ -6,7 +6,7 @@ const projectData = [{
   lenguage3: 'CSS',
   image: './Images/SnapshootPortfolio.png',
   imageAlt: 'SnapshootPortfolio',
-  description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet quasi suscipit enim quidem quas odio libero totam nisi. Numquam corrupti sequi eligendi error laboriosam quasi nulla quidem eaque reiciendis.',
+  description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet quasi suscipit enim quidem quas odio libero totam nisi. Numquam corrupti sequi eligendi error laboriosam quasi nulla quidem eaque reiciendis.',
 },
 
 {
@@ -16,7 +16,7 @@ const projectData = [{
   lenguage3: 'Ruby on Rails',
   image: './Images/SnapshootPortfolio.png',
   imageAlt: 'SnapshootPortfolio',
-  description:'Second Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet quasi suscipit enim quidem quas odio libero totam nisi. Numquam corrupti sequi eligendi error laboriosam quasi nulla quidem eaque reiciendis.',
+  description: 'Second Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet quasi suscipit enim quidem quas odio libero totam nisi. Numquam corrupti sequi eligendi error laboriosam quasi nulla quidem eaque reiciendis.',
 }];
 /* Functions */
 function toggleMenu() {
