@@ -71,7 +71,7 @@ function toggleMenu() {
 const createPopUp = document.querySelector('.csubmit');
 createPopUp.addEventListener('click', () => {
   const pop = document.querySelector('body');
-  const section = document.createElement('section')
+  const section = document.createElement('section');
   section.className = 'pop-up-section';
   pop.appendChild(section);
   section.innerHTML = `
