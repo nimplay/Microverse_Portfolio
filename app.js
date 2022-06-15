@@ -7,7 +7,7 @@ const projectData = [{
   image: './Images/SnapshootPortfolio.png',
   imageAlt: 'SnapshootPortfolio',
   description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet quasi suscipit enim quidem quas odio libero totam nisi. Numquam corrupti sequi eligendi error laboriosam quasi nulla quidem eaque reiciendis.',
-}
+},
 
 {
   title: 'Project Title 2',
