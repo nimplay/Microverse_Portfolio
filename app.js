@@ -30,7 +30,7 @@ const projectData = [{
 },
 
 {
-  title: "Data Dashboard Healthcare",
+  title: 'Data Dashboard Healthcare',
   lenguage1: 'Ruby',
   lenguage2: 'bootstrap',
   lenguage3: 'Ruby on Rails',
@@ -101,40 +101,41 @@ createPopUp.addEventListener('click', () => {
   </div>
   </div>
 `;
-function cardDefault(projectData, index) {
-  document.querySelector('.pop-up-title').textContent = projectData[index].title;
-  document.querySelector('#lenguage1').textContent = projectData[index].lenguage1;
-  document.querySelector('#lenguage2').textContent = projectData[index].lenguage2;
-  document.querySelector('#lenguage3').textContent = projectData[index].lenguage3;
-  document.querySelector('.pop-up-image').src = projectData[index].image;
-  document.querySelector('.pop-up-image').alt = projectData[index].imageAlt;
-  document.querySelector('.pop-up-p').textContent = projectData[index].description;
-}
-cardDefault(projectData, index);
+  function cardDefault(projectData, index) {
+    document.querySelector('.pop-up-title').textContent = projectData[index].title;
+    document.querySelector('#lenguage1').textContent = projectData[index].lenguage1;
+    document.querySelector('#lenguage2').textContent = projectData[index].lenguage2;
+    document.querySelector('#lenguage3').textContent = projectData[index].lenguage3;
+    document.querySelector('.pop-up-image').src = projectData[index].image;
+    document.querySelector('.pop-up-image').alt = projectData[index].imageAlt;
+    document.querySelector('.pop-up-p').textContent = projectData[index].description;
+  }
+  cardDefault(projectData, index);
   const closePop = document.querySelector('.pop-up-x');
   closePop.addEventListener('click', () => {
     pop.removeChild(section);
   });
   const nextPop = document.querySelector('#arrow1');
-  nextPop.addEventListener('click', () => {   
+  nextPop.addEventListener('click', () => {
     if (index > 0 && index < cards) {
       index -= 1;
       cardDefault(projectData, index);
-    } 
-    else{
-      index = cards - 1;     
-      cardDefault(projectData, index);
-    } 
+    }
+     else{
+       index = cards - 1;
+       cardDefault(projectData, index);
+      }
   });
   const nextPop2 = document.querySelector('#arrow2');
   nextPop2.addEventListener('click', () => {
-  if(index < cards - 1 && index >= 0){
-      index += 1;       
-      cardDefault(projectData, index);
-    } else{
-      index = 0;     
-      cardDefault(projectData, index);
+    if(index < cards - 1 && index >= 0){
+       index += 1;       
+       cardDefault(projectData, index);
     } 
+     else{
+       index = 0;     
+       cardDefault(projectData, index);
+     } 
   });
 });
 module.exports = toggleMenu();
