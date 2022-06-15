@@ -1038,7 +1038,7 @@ header {
 
 .pop-up .pop-up-p {
   width: 100%;
-  height: 60%;
+  height: 77%;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
@@ -1436,7 +1436,10 @@ header {
   }
 
   .pop-up {
-    margin-top: 7%;
+    margin-top: 10%;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
   }
 
   .pop-up .pop-up-box2 {
@@ -1446,12 +1449,12 @@ header {
   }
 
   .pop-up .pop-up-secundary-box1 {
-    width: 30%;
-    height: 70%;
+    width: 35%;
+    height: 100%;
   }
 
   .pop-up .pop-up-image {
     width: 60%;
-    height: 70%;
+    height: 90%;
   }
 }
