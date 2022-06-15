@@ -918,7 +918,7 @@ header {
 
 /* pop up secction */
 .pop-up-section {
-  background-color: rgb(255 255 255 / 24%);
+  background-color: rgba(255, 255, 255, 70%);
 }
 
 .pop-up {
@@ -1052,7 +1052,7 @@ header {
 
 .pop-up .pop-up-secundsry-box2 {
   width: 100%;
-  height: 100%;
+  height: 48px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1061,6 +1061,7 @@ header {
   justify-content: space-between;
   margin-top: 14px;
   gap: 3px;
+  flex-wrap: wrap;
 }
 
 .pop-up .pop-up-secundsry-box2 .pop-up-button {
@@ -1434,15 +1435,23 @@ header {
     background-image: url("./Images/Shape.png");
   }
 
+  .pop-up {
+    margin-top: 7%;
+  }
+
   .pop-up .pop-up-box2 {
     flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
   }
 
   .pop-up .pop-up-secundary-box1 {
     width: 30%;
+    height: 70%;
   }
 
   .pop-up .pop-up-image {
     width: 60%;
+    height: 70%;
   }
 }

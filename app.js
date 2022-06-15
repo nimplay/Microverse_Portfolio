@@ -49,21 +49,14 @@ createPopUp.addEventListener('click', () => {
 <div class="pop-up-box2">
   <img class="pop-up-image" src="" alt="SnapshootPortfolio">
   <div class="pop-up-secundary-box1">
-    <p class="pop-up-p">Lorem Ipsum is simply dummy text of the printing and typesetting 
-      industry. Lorem Ipsum has been the industry's standard dummy text 
-      ever since the 1500s, when an unknown printer took a galley of type 
-      and scrambled it 1960s with the releaLorem Ipsum is simply dummy text 
-      of the printing and typesetting industry. Lorem Ipsum has been the 
-      industry's standard dummy text ever since the 1500s, when an unknown 
-      printer took a galley of type and scrambled it 1960s with the releax 
-      map lapora verita.
+    <p class="pop-up-p">
     </p>
     <div class="pop-up-secundsry-box2">
-      <a class="pop-up-button">
+      <a class="pop-up-button" href="https://nimplay.github.io/Microverse_Portfolio/#">
         <p>See Live</p>
         <img src="/Images/liveServer.svg" alt="">
       </a>
-      <a class="pop-up-button">
+      <a class="pop-up-button" href="https://github.com/nimplay/Microverse_Portfolio">
         <p>See Source</p>
         <img src="/Images/whiteGitHub.svg" alt="">
       </a>
@@ -73,7 +66,7 @@ createPopUp.addEventListener('click', () => {
 </div>
 </div>
 `;
-  document.querySelector('.pop-up-title').textContent = projectData[0].title;
+  document.querySelector('.pop-up-title').textContent = projectData[1].title;
   document.querySelector('#lenguage1').textContent = projectData[0].lenguage1;
   document.querySelector('#lenguage2').textContent = projectData[1].lenguage2;
   document.querySelector('#lenguage3').textContent = projectData[0].lenguage3;
