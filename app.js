@@ -1,22 +1,22 @@
 /* Object */
-var projectData = [{
-  title: "Project Title",
-  lenguage1: "HTML",
-  lenguage2: "JavaScript",
-  lenguage3: "CSS",
-  image: "./Images/SnapshootPortfolio.png",
-  imageAlt: "SnapshootPortfolio",
-  description: "this is my js text"
+let projectData = [{
+  title: 'Project Title',
+  lenguage1: 'HTML',
+  lenguage2: 'JavaScript',
+  lenguage3: 'CSS',
+  image: './Images/SnapshootPortfolio.png',
+  imageAlt: 'SnapshootPortfolio',
+  description: 'this is my js text',
 },
 {
-  title: "Project Title 2",
-  lenguage1: "Ruby",
-  lenguage2: "bootstrap",
-  lenguage3: "Ruby on Rails",
-  image: "./Images/SnapshootPortfolio.png",
-  imageAlt: "SnapshootPortfolio",
-  description: "this is my js text"
-}]
+  title: 'Project Title 2',
+  lenguage1: 'Ruby',
+  lenguage2: 'bootstrap',
+  lenguage3: 'Ruby on Rails',
+  image: './Images/SnapshootPortfolio.png',
+  imageAlt: 'SnapshootPortfolio',
+  description: 'this is my js text2',
+}];
 /* Functions */
 function toggleMenu() {
   const menuToggle = document.querySelector('.burger');
@@ -28,7 +28,7 @@ function toggleMenu() {
 }
 
 const createPopUp = document.querySelector('.csubmit');
-createPopUp.addEventListener('click', ()=> {
+createPopUp.addEventListener('click', () => {
    const pop = document.querySelector('body');
    const section = document.createElement('section');
    section.className = 'pop-up-section'
@@ -82,7 +82,7 @@ createPopUp.addEventListener('click', ()=> {
   document.querySelector('.pop-up-p').textContent= projectData[0].description;
  
   const closePop = document.querySelector('.pop-up-x');
-  closePop.addEventListener('click', ()=> {
+  closePop.addEventListener('click', () => {
     pop.removeChild(section);
   })
 })
