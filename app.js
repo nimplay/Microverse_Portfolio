@@ -15,7 +15,7 @@ const projectData = [
     title: 'Website Protfolio ',
     lenguage1: 'HTML',
     lenguage2: 'Boostrap',
-    lenguage3: "Ruby",
+    lenguage3: 'Ruby',
     image: './Images/SnapshootPortfolio.png',
     imageAlt: 'SnapshootPortfolio',
     description:
@@ -60,19 +60,19 @@ const cards = projectData.length;
 
 /* Functions */
 function toggleMenu() {
-  const menuToggle = document.querySelector(".burger");
-  const menuActive = document.querySelector(".sidebar");
-  const logoActive = document.querySelector(".logo");
-  menuToggle.classList.toggle("active");
-  menuActive.classList.toggle("active");
-  logoActive.classList.toggle("active");
+  const menuToggle = document.querySelector('.burger');
+  const menuActive = document.querySelector('.sidebar');
+  const logoActive = document.querySelector('.logo');
+  menuToggle.classList.toggle('active');
+  menuActive.classList.toggle('active');
+  logoActive.classList.toggle('active');
 }
 
-const createPopUp = document.querySelector(".csubmit");
-createPopUp.addEventListener("click", () => {
-  const pop = document.querySelector("body");
-  const section = document.createElement("section");
-  section.className = "pop-up-section";
+const createPopUp = document.querySelector('.csubmit');
+createPopUp.addEventListener('click', () => {
+  const pop = document.querySelector('body');
+  const section = document.createElement('section'
+  section.className = 'pop-up-section';
   pop.appendChild(section);
   section.innerHTML = `
   <div class="pop-up">
@@ -115,16 +115,15 @@ createPopUp.addEventListener("click", () => {
     document.querySelector('#lenguage3').textContent = projectData[index].lenguage3;
     document.querySelector('.pop-up-image').src = projectData[index].image;
     document.querySelector('.pop-up-image').alt = projectData[index].imageAlt;
-    document.querySelector('.pop-up-p').textContent =
-      projectData[index].description;
+    document.querySelector('.pop-up-p').textContent = projectData[index].description;
   }
   cardDefault(projectData, index);
   const closePop = document.querySelector('.pop-up-x');
-  closePop.addEventListener("click", () => {
+  closePop.addEventListener('click', () => {
     pop.removeChild(section);
   });
   const nextPop = document.querySelector('#arrow1');
-  nextPop.addEventListener("click", () => {
+  nextPop.addEventListener('click', () => {
     if (index > 0 && index < cards) {
       index -= 1;
       cardDefault(projectData, index);
@@ -134,7 +133,7 @@ createPopUp.addEventListener("click", () => {
     }
   });
   const nextPop2 = document.querySelector('#arrow2');
-  nextPop2.addEventListener("click", () => {
+  nextPop2.addEventListener('click', () => {
     if (index < cards - 1 && index >= 0) {
       index += 1;
       cardDefault(projectData, index);
