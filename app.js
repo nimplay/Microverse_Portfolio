@@ -121,10 +121,10 @@ createPopUp.addEventListener('click', () => {
       index -= 1;
       cardDefault(projectData, index);
     }
-     else{
-       index = cards - 1;
-       cardDefault(projectData, index);
-      }
+    else{
+      index = cards - 1;
+      cardDefault(projectData, index);
+    }
   });
   const nextPop2 = document.querySelector('#arrow2');
   nextPop2.addEventListener('click', () => {
@@ -132,10 +132,10 @@ createPopUp.addEventListener('click', () => {
        index += 1;       
        cardDefault(projectData, index);
     } 
-     else{
-       index = 0;     
-       cardDefault(projectData, index);
-     } 
+    else{
+      index = 0;     
+      cardDefault(projectData, index);
+    }
   });
 });
 module.exports = toggleMenu();
