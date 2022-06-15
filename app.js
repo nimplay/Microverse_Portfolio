@@ -28,12 +28,12 @@ function toggleMenu() {
 }
 
 const createPopUp = document.querySelector('.csubmit');
-  createPopUp.addEventListener('click', () => {
+createPopUp.addEventListener('click', () => {
   const pop = document.querySelector('body');
   const section = document.createElement('section');
-  section.className = 'pop-up-section'
+  section.className = 'pop-up-section';
   pop.appendChild(section);
-  section.innerHTML =`
+  section.innerHTML = `
   <div class="pop-up">
 <div class="pop-up-box1">
   <div class="pop-up-box-title">
@@ -72,18 +72,17 @@ const createPopUp = document.querySelector('.csubmit');
   </div>
 </div>
 </div>
-`
+`;
   document.querySelector('.pop-up-title').textContent = projectData[0].title;
   document.querySelector('#lenguage1').textContent = projectData[0].lenguage1;
   document.querySelector('#lenguage2').textContent = projectData[1].lenguage2;
   document.querySelector('#lenguage3').textContent = projectData[0].lenguage3;
   document.querySelector('.pop-up-image').src = projectData[0].image;
   document.querySelector('.pop-up-image').alt = projectData[0].imageAlt;
-  document.querySelector('.pop-up-p').textContent = projectData[0].description;
- 
+  document.querySelector('.pop-up-p').textContent = projectData[0].description; 
   const closePop = document.querySelector('.pop-up-x');
   closePop.addEventListener('click', () => {
-  pop.removeChild(section);
-  })
-})
+    pop.removeChild(section);
+  });
+});
 module.exports = toggleMenu();
