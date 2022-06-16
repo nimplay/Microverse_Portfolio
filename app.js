@@ -1,61 +1,61 @@
 /* Object */
 const projectData = [
   {
-    title: "",
-    lenguage1: "",
-    lenguage2: "",
-    lenguage3: "",
-    image: "./Images/Card1.png",
+    title: '',
+    lenguage1: '',
+    lenguage2: '',
+    lenguage3: '',
+    image: './Images/Card1.png',
     description:
-      "",
+      '',
   },
 
   {
-    title: "Website Protfolio ",
-    lenguage1: "HTML",
-    lenguage2: "Boostrap",
-    lenguage3: "Ruby",
-    image: "./Images/Card2.png",
+    title: 'Website Protfolio ',
+    lenguage1: 'HTML',
+    lenguage2: 'Boostrap',
+    lenguage3: 'Ruby',
+    image: './Images/Card2.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   },
 
   {
-    title: "Profesional Art Printing Data More",
-    lenguage1: "HTML",
+    title: 'Profesional Art Printing Data More',
+    lenguage1: 'HTML',
     lenguage2: "JavaScript",
     lenguage3: "CSS",
     image: "./Images/Card3.png",
     description:
-      "daily  mselection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar",
+      'daily  mselection of privately personalized reads; no accounts or sign-ups required. has been the industrys standar',
   },
 
   {
-    title: "Data Dashboard Healthcare",
-    lenguage1: "Ruby",
-    lenguage2: "bootstrap",
-    lenguage3: "Ruby on Rails",
-    image: "./Images/Mask.png",
+    title: 'Data Dashboard Healthcare',
+    lenguage1: 'Ruby',
+    lenguage2: 'bootstrap',
+    lenguage3: 'Ruby on Rails',
+    image: './Images/Mask.png',
     description:
       "A b daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
   },
 
   {
-    title: "Profesional Art Printing Data More",
-    lenguage1: "HTML",
-    lenguage2: "JavaScript",
-    lenguage3: "CSS",
-    image: "./Images/Card2.png",
+    title: 'Profesional Art Printing Data More',
+    lenguage1: 'HTML',
+    lenguage2: 'JavaScript',
+    lenguage3: 'CSS',
+    image: './Images/Card2.png',
     description:
       "daily  oselection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar",
   },
 
   {
-    title: "Profesional Art Printing Data More",
-    lenguage1: "HTML",
-    lenguage2: "JavaScript",
-    lenguage3: "CSS",
-    image: "./Images/Card3.png",
+    title: 'Profesional Art Printing Data More',
+    lenguage1: 'HTML',
+    lenguage2: 'JavaScript',
+    lenguage3: 'CSS',
+    image: './Images/Card3.png',
     description:
       "daily rselection of privately personalized reads; no accounts or sign-ups required. has been the industry's standar",
   },
@@ -64,25 +64,24 @@ let index = 0;
 
 /* Functions */
 function toggleMenu() {
-  const menuToggle = document.querySelector(".burger");
-  const menuActive = document.querySelector(".sidebar");
-  const logoActive = document.querySelector(".logo");
-  menuToggle.classList.toggle("active");
-  menuActive.classList.toggle("active");
-  logoActive.classList.toggle("active");
+  const menuToggle = document.querySelector('.burger');
+  const menuActive = document.querySelector('.sidebar');
+  const logoActive = document.querySelector('.logo');
+  menuToggle.classList.toggle('active');
+  menuActive.classList.toggle('active');
+  logoActive.classList.toggle('active');
 }
 // cards
 const deck = document.querySelector('.works');
 const mainDeck = document.createElement('ul');
 mainDeck.className = 'deck';
 deck.appendChild(mainDeck);
-addLi();
 function addLi() {
-  for (i = 0; i < projectData.length; i++) {
+  for (let i = 0; i < projectData.length; i++) {
     index = i;
     // variables
     var li = document.createElement('li');
-    var div1 = document.createElement('div');
+    const div1 = document.createElement('div');
     var cardtitle = document.createElement('h2');
     var cardp = document.createElement('p');
     var lenguagesUl = document.createElement('ul');
@@ -134,12 +133,13 @@ function addLi() {
     document.getElementById(buttonId).textContent = "See Project";    
   }
 }
+addLi();
 //pop up
-const createPopUp = document.querySelector("#buttid");
-createPopUp.addEventListener("click", () => {
-  const pop = document.querySelector("body");
-  const section = document.createElement("section");
-  section.className = "pop-up-section";
+const createPopUp = document.querySelector('#buttid');
+createPopUp.addEventListener('click', () => {
+  const pop = document.querySelector('body');
+  const section = document.createElement('section');
+  section.className = 'pop-up-section';
   pop.appendChild(section);
   section.innerHTML = `
   <div class="pop-up">
@@ -185,25 +185,25 @@ createPopUp.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title");
-  document.querySelector("#lenguage1");
-  document.querySelector("#lenguage2");
-  document.querySelector("#lenguage3");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop = document.querySelector(".pop-up-x");
-  closePop.addEventListener("click", () => {
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop = document.querySelector('.pop-up-x');
+  closePop.addEventListener('click', () => {
     pop.removeChild(section);
   });
 });
 
 //pop up 2
-const createPopUp0 = document.querySelector("#button-card0");
-createPopUp0.addEventListener("click", () => {
-  const pop0 = document.querySelector("body");
-  const section0 = document.createElement("section");
-  section0.className = "pop-up-section";
+const createPopUp0 = document.querySelector('#button-card0');
+createPopUp0.addEventListener('click', () => {
+  const pop0 = document.querySelector('body');
+  const section0 = document.createElement('section');
+  section0.className = 'pop-up-section';
   pop0.appendChild(section0);
   section0.innerHTML = `
   <div class="pop-up">
@@ -249,25 +249,25 @@ createPopUp0.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title").textContent ='Data Dashboard Healthcare';
-  document.querySelector("#lenguage1");
-  document.querySelector("#lenguage2");
-  document.querySelector("#lenguage3");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop0 = document.querySelector(".pop-up-x");
-  closePop0.addEventListener("click", () => {
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop0 = document.querySelector('.pop-up-x');
+  closePop0.addEventListener('click', () => {
     pop0.removeChild(section0);
   });
 });
 
 //pop up 3
-const createPopUp1 = document.querySelector("#button-card1");
-createPopUp1.addEventListener("click", () => {
-  const pop1 = document.querySelector("body");
-  const section1 = document.createElement("section");
-  section1.className = "pop-up-section";
+const createPopUp1 = document.querySelector('#button-card1');
+createPopUp1.addEventListener('click', () => {
+  const pop1 = document.querySelector('body');
+  const section1 = document.createElement('section');
+  section1.className = 'pop-up-section';
   pop1.appendChild(section1);
   section1.innerHTML = `
   <div class="pop-up">
@@ -313,25 +313,25 @@ createPopUp1.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title");
-  document.querySelector("#lenguage1");
-  document.querySelector("#lenguage2");
-  document.querySelector("#lenguage3");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop1 = document.querySelector(".pop-up-x");
-  closePop1.addEventListener("click", () => {
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop1 = document.querySelector('.pop-up-x');
+  closePop1.addEventListener('click', () => {
     pop1.removeChild(section1);
   });
 });
 
 //pop up 3
-const createPopUp2 = document.querySelector("#button-card2");
-createPopUp2.addEventListener("click", () => {
-  const pop2 = document.querySelector("body");
-  const section2 = document.createElement("section");
-  section2.className = "pop-up-section";
+const createPopUp2 = document.querySelector('#button-card2');
+createPopUp2.addEventListener('click', () => {
+  const pop2 = document.querySelector('body');
+  const section2 = document.createElement('section');
+  section2.className = 'pop-up-section';
   pop2.appendChild(section2);
   section2.innerHTML = `
   <div class="pop-up">
@@ -377,31 +377,31 @@ createPopUp2.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title");
-  document.querySelector("#lenguage1");
-  document.querySelector("#lenguage2");
-  document.querySelector("#lenguage3");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop2 = document.querySelector(".pop-up-x");
-  closePop2.addEventListener("click", () => {
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop2 = document.querySelector('.pop-up-x');
+  closePop2.addEventListener('click', () => {
     pop2.removeChild(section2);
   });
 });
 
 //pop up 4
-const createPopUp3 = document.querySelector("#button-card3");
-createPopUp3.addEventListener("click", () => {
-  const pop3 = document.querySelector("body");
-  const section3 = document.createElement("section");
-  section3.className = "pop-up-section";
+const createPopUp3 = document.querySelector('#button-card3');
+createPopUp3.addEventListener('click', () => {
+  const pop3 = document.querySelector('body');
+  const section3 = document.createElement('section');
+  section3.className = 'pop-up-section';
   pop3.appendChild(section3);
   section3.innerHTML = `
   <div class="pop-up">
       <div class="pop-up-box1">
         <div class="pop-up-box-title">
-          <h1 class="pop-up-title">Data Dashboard Healthcare</h1>
+          <h1 class="pop-up-title">Data Dashboard</h1>
           <div class="pop-up-x"></div>
         </div>
         <ul class="pop-up-ul">
@@ -441,31 +441,31 @@ createPopUp3.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title");
-  document.querySelector("#lenguage1");
-  document.querySelector("#lenguage2");
-  document.querySelector("#lenguage3");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop3 = document.querySelector(".pop-up-x");
-  closePop3.addEventListener("click", () => {
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop3 = document.querySelector('.pop-up-x');
+  closePop3.addEventListener('click', () => {
     pop3.removeChild(section3);
   });
 });
 
 //pop up 4
-const createPopUp4 = document.querySelector("#button-card4");
-createPopUp4.addEventListener("click", () => {
-  const pop4 = document.querySelector("body");
-  const section4 = document.createElement("section");
-  section4.className = "pop-up-section";
+const createPopUp4 = document.querySelector('#button-card4');
+createPopUp4.addEventListener('click', () => {
+  const pop4 = document.querySelector('body');
+  const section4 = document.createElement('section');
+  section4.className = 'pop-up-section';
   pop4.appendChild(section4);
   section4.innerHTML = `
   <div class="pop-up">
       <div class="pop-up-box1">
         <div class="pop-up-box-title">
-          <h1 class="pop-up-title">Profesional Art Printing Data More</h1>
+          <h1 class="pop-up-title">Profesional Art</h1>
           <div class="pop-up-x"></div>
         </div>
         <ul class="pop-up-ul">
@@ -502,31 +502,31 @@ createPopUp4.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title");
-  document.querySelector("#lenguage1");
-  document.querySelector("#lenguage2");
-  document.querySelector("#lenguage3");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop4 = document.querySelector(".pop-up-x");
-  closePop4.addEventListener("click", () => {
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop4 = document.querySelector('.pop-up-x');
+  closePop4.addEventListener('click', () => {
     pop4.removeChild(section4);
   });
 });
 
 //pop up 5
-const createPopUp5 = document.querySelector("#button-card5");
-createPopUp5.addEventListener("click", () => {
-  const pop5 = document.querySelector("body");
-  const section5 = document.createElement("section");
-  section5.className = "pop-up-section";
+const createPopUp5 = document.querySelector('#button-card5');
+createPopUp5.addEventListener('click', () => {
+  const pop5 = document.querySelector('body');
+  const section5 = document.createElement('section');
+  section5.className = 'pop-up-section';
   pop5.appendChild(section5);
   section5.innerHTML = `
   <div class="pop-up">
       <div class="pop-up-box1">
         <div class="pop-up-box-title">
-          <h1 class="pop-up-title">Profesional Art Printing Data More</h1>
+          <h1 class="pop-up-title">Profesional Art</h1>
           <div class="pop-up-x"></div>
         </div>
         <ul class="pop-up-ul">
@@ -564,15 +564,15 @@ createPopUp5.addEventListener("click", () => {
     </div>
 `;
 
-  document.querySelector(".pop-up-title"); 
-  document.querySelector("#lenguage1"); 
-  document.querySelector("#lenguage2"); 
-  document.querySelector("#lenguage3"); 
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-image");
-  document.querySelector(".pop-up-p");
-  const closePop5 = document.querySelector(".pop-up-x");
-  closePop5.addEventListener("click", () => {
+  document.querySelector('.pop-up-title'); 
+  document.querySelector('#lenguage1'); 
+  document.querySelector('#lenguage2'); 
+  document.querySelector('#lenguage3'); 
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-image');
+  document.querySelector('.pop-up-p');
+  const closePop5 = document.querySelector('.pop-up-x');
+  closePop5.addEventListener('click', () => {
     pop5.removeChild(section5);
   });
 });
