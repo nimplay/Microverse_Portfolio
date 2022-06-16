@@ -23,9 +23,9 @@ const projectData = [
   {
     title: 'Profesional Art Printing Data More',
     lenguage1: 'HTML',
-    lenguage2: "JavaScript",
-    lenguage3: "CSS",
-    image: "./Images/Card3.png",
+    lenguage2: 'JavaScript',
+    lenguage3: 'CSS',
+    image: './Images/Card3.png',
     description:
       'daily  mselection of privately personalized reads; no accounts or sign-ups required. has been the industrys standar',
   },
@@ -77,18 +77,18 @@ const mainDeck = document.createElement('ul');
 mainDeck.className = 'deck';
 deck.appendChild(mainDeck);
 function addLi() {
-  for (let i = 0; i < projectData.length; i++) {
+  for (let i = 0; i < projectData.length; i += 1) {
     index = i;
     // variables
-    var li = document.createElement('li');
+    const li = document.createElement('li');
     const div1 = document.createElement('div');
-    var cardtitle = document.createElement('h2');
-    var cardp = document.createElement('p');
-    var lenguagesUl = document.createElement('ul');
-    var lg1 = document.createElement('li');
-    var lg2 = document.createElement('li');
-    var lg3 = document.createElement('li');      
-    var buttonCP = document.createElement('a');
+    const cardtitle = document.createElement('h2');
+    const cardp = document.createElement('p');
+    const lenguagesUl = document.createElement('ul');
+    const lg1 = document.createElement('li');
+    const lg2 = document.createElement('li');
+    const lg3 = document.createElement('li');
+    const buttonCP = document.createElement('a');
     // classes
     li.className = 'card';
     div1.className = 'ctext';
@@ -96,23 +96,23 @@ function addLi() {
     lenguagesUl.className = 'clist';
     lg1.className = 'ciconlist';
     lg2.className = 'ciconlist';
-    lg3.className = 'ciconlist';    
-    buttonCP.className ='cbutton butt';
+    lg3.className = 'ciconlist';
+    buttonCP.className = 'cbutton butt';
     // Dinamics IDs
-    li.setAttribute('id', 'bi' + i);
-    cardtitle.setAttribute('id', 't' + i);
-    cardp.setAttribute('id', 'p' + i);
-    lg1.setAttribute('id', 'l1' + i);
-    lg2.setAttribute('id', 'l2' + i);
-    lg3.setAttribute('id', 'l3' + i);
-    buttonCP.setAttribute('id', 'button-card' + i); //thid Id is for add specific action into the button
-    var bi = li.getAttribute('id');
-    var ids = cardtitle.getAttribute('id');
-    var idsp = cardp.getAttribute('id');
-    var len1 = lg1.getAttribute('id');
-    var len2 = lg2.getAttribute('id');
-    var len3 = lg3.getAttribute('id');
-    var buttonId = buttonCP.getAttribute('id');
+    li.setAttribute('id', `bi${i}`);
+    cardtitle.setAttribute('id', `t${i}`);
+    cardp.setAttribute('id', `p${i}`);
+    lg1.setAttribute('id', `l1${i}`);
+    lg2.setAttribute('id', `l2${i}`);
+    lg3.setAttribute('id', `l3${i}`);
+    buttonCP.setAttribute('id', `button-card${i}`); // thid Id is for add specific action into the button
+    const bi = li.getAttribute('id');
+    const ids = cardtitle.getAttribute('id');
+    const idsp = cardp.getAttribute('id');
+    const len1 = lg1.getAttribute('id');
+    const len2 = lg2.getAttribute('id');
+    const len3 = lg3.getAttribute('id');
+    const buttonId = buttonCP.getAttribute('id');
     // Appends
     mainDeck.appendChild(li);
     li.appendChild(div1);
@@ -122,19 +122,19 @@ function addLi() {
     lenguagesUl.appendChild(lg1);
     lenguagesUl.appendChild(lg2);
     lenguagesUl.appendChild(lg3);
-    li.appendChild(buttonCP);    
-    //dislay data
+    li.appendChild(buttonCP);
+    // dislay data
     document.getElementById(bi).style.backgroundImage = `url(${projectData[index].image})`;
     document.getElementById(ids).textContent = projectData[index].title;
     document.getElementById(idsp).textContent = projectData[index].description;
     document.getElementById(len1).textContent = projectData[index].lenguage1;
     document.getElementById(len2).textContent = projectData[index].lenguage2;
     document.getElementById(len3).textContent = projectData[index].lenguage3;
-    document.getElementById(buttonId).textContent = "See Project";    
+    document.getElementById(buttonId).textContent = 'See Project';
   }
 }
 addLi();
-//pop up
+// pop up
 const createPopUp = document.querySelector('#buttid');
 createPopUp.addEventListener('click', () => {
   const pop = document.querySelector('body');
@@ -198,7 +198,7 @@ createPopUp.addEventListener('click', () => {
   });
 });
 
-//pop up 2
+// pop up 2
 const createPopUp0 = document.querySelector('#button-card0');
 createPopUp0.addEventListener('click', () => {
   const pop0 = document.querySelector('body');
@@ -262,7 +262,7 @@ createPopUp0.addEventListener('click', () => {
   });
 });
 
-//pop up 3
+// pop up 3
 const createPopUp1 = document.querySelector('#button-card1');
 createPopUp1.addEventListener('click', () => {
   const pop1 = document.querySelector('body');
@@ -326,7 +326,7 @@ createPopUp1.addEventListener('click', () => {
   });
 });
 
-//pop up 3
+// pop up 3
 const createPopUp2 = document.querySelector('#button-card2');
 createPopUp2.addEventListener('click', () => {
   const pop2 = document.querySelector('body');
@@ -390,7 +390,7 @@ createPopUp2.addEventListener('click', () => {
   });
 });
 
-//pop up 4
+// pop up 4
 const createPopUp3 = document.querySelector('#button-card3');
 createPopUp3.addEventListener('click', () => {
   const pop3 = document.querySelector('body');
@@ -454,7 +454,7 @@ createPopUp3.addEventListener('click', () => {
   });
 });
 
-//pop up 4
+// pop up 4
 const createPopUp4 = document.querySelector('#button-card4');
 createPopUp4.addEventListener('click', () => {
   const pop4 = document.querySelector('body');
@@ -515,7 +515,7 @@ createPopUp4.addEventListener('click', () => {
   });
 });
 
-//pop up 5
+// pop up 5
 const createPopUp5 = document.querySelector('#button-card5');
 createPopUp5.addEventListener('click', () => {
   const pop5 = document.querySelector('body');
@@ -564,10 +564,10 @@ createPopUp5.addEventListener('click', () => {
     </div>
 `;
 
-  document.querySelector('.pop-up-title'); 
-  document.querySelector('#lenguage1'); 
-  document.querySelector('#lenguage2'); 
-  document.querySelector('#lenguage3'); 
+  document.querySelector('.pop-up-title');
+  document.querySelector('#lenguage1');
+  document.querySelector('#lenguage2');
+  document.querySelector('#lenguage3');
   document.querySelector('.pop-up-image');
   document.querySelector('.pop-up-image');
   document.querySelector('.pop-up-p');
@@ -578,4 +578,3 @@ createPopUp5.addEventListener('click', () => {
 });
 
 module.exports = toggleMenu();
-
