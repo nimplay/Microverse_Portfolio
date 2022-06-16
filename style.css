@@ -82,7 +82,7 @@ header {
   padding: 40px;
   background: #3c3a39;
   align-content: flex-start;
-  justify-content: end;
+  justify-content: start;
   flex-wrap: nowrap;
 }
 
@@ -443,9 +443,13 @@ header {
 }
 
 .card {
+  margin: 2px;
+  display: flex;
   width: 327px;
   height: 386px;
-  background-image: url("./Images/Mask.png");
+  background-image: url(./Images/Mask.png);
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .ctext {
@@ -455,7 +459,7 @@ header {
   padding: 90px 16px;
   gap: 12px;
   width: 327px;
-  height: 248px;
+  height: 280px;
   left: calc(50% - 327px / 2);
   bottom: 62px;
 }
@@ -472,9 +476,11 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
+  display: flex;
+  align-items: flex-end;
 }
 
-.ctext .cp {
+.cp {
   width: 295px;
   height: 87px;
   font-family: Inter, serif;
@@ -492,7 +498,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
+  padding: 0 16px;
   gap: 12px;
   width: 236px;
   height: 40px;
@@ -511,28 +517,17 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.ciconlist p {
-  height: 20px;
   font-family: Inter, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #ffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.bcnbutton {
-  margin-top: 90px;
-  display: flex;
-  align-items: center;
 }
 
 .cbutton {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   padding: 12px;
   gap: 10px;
@@ -549,6 +544,7 @@ header {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 /* about */
@@ -811,6 +807,7 @@ header {
 }
 
 .csubmit {
+  order: 3;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -938,7 +935,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  gap: 24px;
+  gap: 35px;
   bottom: 0;
   background: #ffff;
   border: 1px solid #ebecf0;
@@ -963,6 +960,7 @@ header {
 .pop-up-box-title {
   display: flex;
   flex-direction: row;
+  width: 95%;
 }
 
 .pop-up .pop-up-title {
@@ -1016,57 +1014,54 @@ header {
   flex-direction: column;
   align-items: center;
   order: 1;
-  height: 80%;
-  width: 80%;
+  height: 70%;
+  width: 90%;
   gap: 24px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .pop-up-arrow {
-  padding-right: 70px;
-  width: 80px;
-  height: 80px;
-  right: 24px;
-  top: 20px;
+  width: 10%;
+  height: 10%;
   animation-name: arrowanim;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
+.pop-up-continer-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 #arrow1 {
   order: 0;
   background-image: url(./Images/previousArrow.png);
   background-repeat: no-repeat;
-  align-self: center;
   background-size: 100%;
+  background-position: center;
+  position: absolute;
+  left: 24px;
+  top: 40%;
 }
 
 #arrow2 {
-  order: 3;
+  order: 2;
   background-image: url(./Images/nextArrow.png);
   background-repeat: no-repeat;
-  align-self: center;
   background-size: 100%;
-}
-
-@keyframes arrowanim {
-  0% {
-    padding-right: 70px;
-  }
-
-  50% {
-    padding-right: 75px;
-  }
-
-  100% {
-    padding-right: 75px;
-  }
+  background-position: center;
+  position: absolute;
+  right: 24px;
+  top: 40%;
 }
 
 .pop-up .pop-up-image {
   width: 100%;
-  height: 45%;
+  height: 50%;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1079,15 +1074,16 @@ header {
   padding: 0;
   gap: 12px;
   width: 100%;
-  height: 50%;
+  height: 65%;
   flex: none;
   order: 2;
   flex-grow: 0;
+  justify-content: space-between;
 }
 
 .pop-up .pop-up-p {
   width: 100%;
-  height: 77%;
+  height: 35%;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
@@ -1110,7 +1106,6 @@ header {
   justify-content: space-between;
   margin-top: 14px;
   gap: 3px;
-  flex-wrap: wrap;
 }
 
 .pop-up .pop-up-secundsry-box2 .pop-up-button {
@@ -1131,6 +1126,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffff;
+  text-decoration: none;
 }
 
 @keyframes buttonanimation {
@@ -1504,6 +1500,6 @@ header {
 
   .pop-up .pop-up-image {
     width: 60%;
-    height: 90%;
+    height: 100%;
   }
 }
