@@ -786,6 +786,23 @@ header {
   margin-bottom: 70px;
 }
 
+.form-name.success input {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.form-name.error input {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.form-name small {
+  visibility: hidden;
+}
+
+.form-name.error small {
+  color: brown;
+  visibility: visible;
+}
+
 .cdata {
   width: 327px;
   height: 48px;
@@ -1128,18 +1145,6 @@ header {
   letter-spacing: 0.03em;
   color: #ffff;
   text-decoration: none;
-}
-
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -60px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 @keyframes buttonanimation {
