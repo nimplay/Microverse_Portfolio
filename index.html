@@ -208,17 +208,17 @@
         </div>
         <form class="contactform" id="form" action="https://formspree.io/f/xlezzayo" method="POST">
           <div class="form-name">
-           <input type="text" name="name" maxlength="30" placeholder="Full name" class="cdata" id="f-name" />
+           <input type="text" name="name" maxlength="30" placeholder="Full name" class="cdata" id="f-name" required />
            <small>Error message</small>
           </div>
           <div class="form-name">
-            <input type="email" name="email" placeholder="Email address" class="cdata" id="f-mail" />
+            <input type="email" name="email" placeholder="Email address" class="cdata" id="f-mail" required/>
            <small>Error message</small>
           </div>
           <div>
-            <textarea name="message" placeholder="Enter Text Here" class="cmessage" maxlength="500"></textarea>
+            <textarea name="message" placeholder="Enter Text Here" class="cmessage" id="f-msg" maxlength="500" required></textarea>
           </div>
-          <input class="csubmit" type="submit" value="Get in touch"/>
+          <input class="csubmit" id="f-btn" type="submit" value="Get in touch"/>
         </form>
       </div>
       <div class="linebutton"></div>

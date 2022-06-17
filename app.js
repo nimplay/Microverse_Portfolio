@@ -75,6 +75,7 @@ function toggleMenu() {
 const form = document.getElementById('form');
 const name = document.getElementById('f-name');
 const email = document.getElementById('f-mail');
+const msg = document.getElementById('f-msg');
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
@@ -89,7 +90,7 @@ function setSuccessFor(input) {
 }
 
 function isEmail(email) {
-  return /^[a-z0-9.!#$%&'*+=?^_`{|}~-]+@[a-z0-9](?:[a-zA-Z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/.test(email);
+  return /^[a-z0-9.!#$%&'*+=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/.test(email);
 }
 
 function checkImputs() {
@@ -113,6 +114,39 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   checkImputs();
 });
+
+/* Local storage */
+const userData = [];
+const addUserData = () => {
+  const dataUserObject = {
+    name: name.value,
+    email: email.value,
+    msg: msg.value,
+  };
+  userData.push(dataUserObject);
+  localStorage.setItem('UserData', JSON.stringify(userData));
+};
+  /* document.addEventListener('DOMContentLoaded', () => {
+   document.getElementById('f-btn').addEventListener('click', addUserData);
+}); */
+
+function getUserData() {
+  let data = localStorage.getItem('UserData');
+  data = JSON.parse(data);
+  const lastUser = data[data.length - 1];
+  name.value = lastUser.name;
+  email.value = lastUser.email;
+  msg.value = lastUser.msg;
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  addUserData();
+  form.submit();
+  form.reset();
+});
+
+getUserData();
 
 // cards
 const deck = document.querySelector('.works');
