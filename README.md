@@ -38,7 +38,11 @@ Author
 
 Contributers
 ------------
-
+### Romina
+- Github: [@rominana](https://www.github.com/rominana)
+- LinkedIn [@Romina Patiño](https://www.linkedin.com/romina-patino)
+-
+-
 ### Esteban
 - GitHub: [@ch4ne5teban](https://www.github.com/ch4ne5teban)
 - Twitter: [@ch4ne5teban](https://www.twitter.com/ch4ne5teban)

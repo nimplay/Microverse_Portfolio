@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nimplay's Software Development Portfolio | Homepage</title>
     <link rel="shortcut icon" href="./Images/nimplayLogo.jpg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />   
   </head>
 
   <body>
@@ -111,150 +111,10 @@
                 <p>Ruby</p>
               </li>
             </ul>
-            <a class="csubmit" href="#">See Project</a>
+            <a class="csubmit butt" id="buttid">See More</a>
           </div>
         </div>
-      </div>
-      <ul class="deck">
-        <li class="card">
-          <div class="ctext">
-            <h2>Profesional Art Printing Data</h2>
-            <p class="cp">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="clist">
-              <li class="ciconlist">
-                <p>html</p>
-              </li>
-              <li class="ciconlist">
-                <p>bootstrap</p>
-              </li>
-              <li class="ciconlist">
-                <p>Ruby</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bcnbutton">
-            <a class="cbutton" href="#">See Project</a>
-          </div>
-        </li>
-        <li class="card">
-          <div class="ctext">
-            <h2>Profesional Art Printing Data</h2>
-            <p class="cp">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="clist">
-              <li class="ciconlist">
-                <p>html</p>
-              </li>
-              <li class="ciconlist">
-                <p>bootstrap</p>
-              </li>
-              <li class="ciconlist">
-                <p>Ruby</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bcnbutton">
-            <a class="cbutton" href="#">See Project</a>
-          </div>
-        </li>
-        <li class="card">
-          <div class="ctext">
-            <h2>Profesional Art Printing Data</h2>
-            <p class="cp">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="clist">
-              <li class="ciconlist">
-                <p>html</p>
-              </li>
-              <li class="ciconlist">
-                <p>bootstrap</p>
-              </li>
-              <li class="ciconlist">
-                <p>Ruby</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bcnbutton">
-            <a class="cbutton" href="#">See Project</a>
-          </div>
-        </li>
-        <li class="card">
-          <div class="ctext">
-            <h2>Profesional Art Printing Data</h2>
-            <p class="cp">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="clist">
-              <li class="ciconlist">
-                <p>html</p>
-              </li>
-              <li class="ciconlist">
-                <p>bootstrap</p>
-              </li>
-              <li class="ciconlist">
-                <p>Ruby</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bcnbutton">
-            <a class="cbutton" href="#">See Project</a>
-          </div>
-        </li>
-        <li class="card">
-          <div class="ctext">
-            <h2>Profesional Art Printing Data</h2>
-            <p class="cp">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="clist">
-              <li class="ciconlist">
-                <p>html</p>
-              </li>
-              <li class="ciconlist">
-                <p>bootstrap</p>
-              </li>
-              <li class="ciconlist">
-                <p>Ruby</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bcnbutton">
-            <a class="cbutton" href="#">See Project</a>
-          </div>
-        </li>
-        <li class="card">
-          <div class="ctext">
-            <h2>Profesional Art Printing Data</h2>
-            <p class="cp">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="clist">
-              <li class="ciconlist">
-                <p>html</p>
-              </li>
-              <li class="ciconlist">
-                <p>bootstrap</p>
-              </li>
-              <li class="ciconlist">
-                <p>Ruby</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bcnbutton">
-            <a class="cbutton" href="#">See Project</a>
-          </div>
-        </li>
-      </ul>
+      </div> 
     </section>
     <!--Section About-->
     <section class="about" id="about">
@@ -266,7 +126,7 @@
           like what you see and have a project you need coded, don’t hestiate to
           contact me.
         </p>
-        <a class="csubmit" href="#">See Project</a>
+        <a class="csubmit">See Project</a>
       </div>
       <div class="aline"></div>
       <div class="acontiner">
@@ -346,34 +206,19 @@
             like to chat please get in touch.
           </h3>
         </div>
-        <form
-          class="contactform"
-          action="https://formspree.io/f/xlezzayo"
-          method="POST"
-        >
-          <input
-            type="text"
-            name="name"
-            maxlength="30"
-            placeholder="Full name"
-            class="cdata"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email address"
-            class="cdata"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Enter Text Here"
-            class="cmessage"
-            maxlength="500"
-            required
-          ></textarea>
-          <input class="csubmit" type="submit" value="Get in touch" />
+        <form class="contactform" id="form" action="https://formspree.io/f/xlezzayo" method="POST">
+          <div class="form-name">
+           <input type="text" name="name" maxlength="30" placeholder="Full name" class="cdata" id="f-name" />
+           <small>Error message</small>
+          </div>
+          <div class="form-name">
+            <input type="email" name="email" placeholder="Email address" class="cdata" id="f-mail" />
+           <small>Error message</small>
+          </div>
+          <div>
+            <textarea name="message" placeholder="Enter Text Here" class="cmessage" maxlength="500"></textarea>
+          </div>
+          <input class="csubmit" type="submit" value="Get in touch"/>
         </form>
       </div>
       <div class="linebutton"></div>
@@ -435,43 +280,7 @@
           <div class="menuline"></div>
         </li>
       </ul>
-    </div>
-    <!--pop up-->
-    <div class="pop-up">
-      <div class="pop-up-box1">
-        <h1 class="pop-up-title">Keeping track of hundreds  of components website</h1>
-        <ul class="pop-up-ul">
-          <li class="pop-up-li">html</li>
-          <li class="pop-up-li">Bootstrap</li>
-          <li class="pop-up-li">Ruby on rails</li>
-        </ul>
-      </div>
-      <div class="pop-up-box2">
-        <img class="pop-up-image" src="/Images/SnapshootPortfolio.png" alt="SnapshootPortfolio">
-        <div class="pop-up-secundary-box1">
-          <p class="pop-up-p">Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text 
-            ever since the 1500s, when an unknown printer took a galley of type 
-            and scrambled it 1960s with the releaLorem Ipsum is simply dummy text 
-            of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown 
-            printer took a galley of type and scrambled it 1960s with the releax 
-            map lapora verita.
-          </p>
-          <div class="pop-up-secundsry-box2">
-            <a class="pop-up-button">
-              <p>See Live</p>
-              <img src="/Images/liveServer.svg" alt="">
-            </a>
-            <a class="pop-up-button">
-              <p>See Source</p>
-              <img src="/Images/whiteGitHub.svg" alt="">
-            </a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="app.js"></script>
+    </div>   
+    <script src="./app.js"></script>
   </body>
 </html>
